@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "category": "Cox's Bazar",
+        "description": "The longest natural sandy sea beach, Cox’s Bazar is also known for its scenic beauty. The main tourist attraction of our country is Cox’s Bazar. There are many tourist attractions like The Himchori, Kutubdia Lighthouse, Safari park, Moheshkhali Island, and the amazing St. Martin Island located in Cox’s Bazar. Tourists can enjoy their time by traveling the longest marine drive, enjoying fresh seafood, sea driving, hiking hill tracks, horse riding, and Parasailing.",
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/e2/f8/43/longest-sea-beach-in.jpg?w=700&h=-1&s=1"
+    },
+    {
+        "id": 2,
+        "category": "Sundarban",
+        "description": "Sundarbans is a mangrove area in the delta formed by the confluence of the Padma, Brahmaputra and Meghna Rivers in the Bay of Bengal. It spans the area from the Baleswar River in Bangladesh's division of Khulna to the Hooghly River in India's state of West Bengal. It comprises closed and open mangrove forests, land used for agricultural purpose, mudflats and barren land, and is intersected by multiple tidal streams and channels. Sundarbans is home to the world's largest area of mangrove forests. Four protected areas in the Sundarbans are enlisted as UNESCO World Heritage Sites, viz. Sundarbans West (Bangladesh), Sundarbans South (Bangladesh), Sundarbans East (Bangladesh) and Sundarbans National Park (India).",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Sun_in_Sunderbans.jpg/284px-Sun_in_Sunderbans.jpg"
+    },
+    {
+        "id": 3,
+        "category": "Sajek Valley",
+        "description": "Sajek Tripuri Valley is one of the most popular tourist spots in Bangladesh situated among the hills of the Kasalong range of mountains in Sajek union, Baghaichhari Upazila in Rangamati District. The valley is 2,000 feet (610 m) above sea level. Sajek Tripuri Valley is known as the Queen of Hills & Roof of Rangamati.",
+        "image": "https://vromonguide.com/wp-content/uploads/Sajek-Resort-Cottage-770x420.jpg"
+    }
+]
