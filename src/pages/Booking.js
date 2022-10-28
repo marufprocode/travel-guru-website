@@ -9,11 +9,11 @@ const Booking = () => {
         <div className="relative h-fit md:h-screen w-full overflow-hidden">
             {activeCard && <VideoBG/>}
             <div className='flex flex-col md:flex-row items-center'>
-                <div className="w-[100%] md:w-[50%] flex flex-col px-10 z-20 justify-center mt-24">
+                <div className="w-[100%] md:w-[50%] flex flex-col px-10 z-20 justify-center mt-28 md:mt-0">
                     <h1 className='text-white text-5xl font-semibold'>{activeCard?.category}</h1>
                     <p className='text-white'>{activeCard?.description}</p>
                 </div>
-                <div className="w-[100%] md:w-[50%] flex justify-center items-center my-auto">
+                <div className="w-[100%] md:w-[50%] h-[100%] flex justify-center items-center ">
                    <BookingForm/>
                 </div>
             </div>

@@ -20,9 +20,11 @@
   .swiper-slide-active {
     margin-left: 18px;
     border-radius: 15px;
-    scale: 1.05;
+    border: 1px solid rgb(223, 235, 114);
     box-shadow: rgba(133, 75, 9, 0.25) 0px 0.0625em 0.0625em, rgba(255, 255, 255, 0.25) 0px 0.125em 0.5em, rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
 }
+
 .swiper-button-prev:after{
     content: '';
 }
