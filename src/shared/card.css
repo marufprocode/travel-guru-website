@@ -18,11 +18,13 @@
   }
 
   .swiper-slide-active {
-    margin-left: 18px;
+    /* margin-left: 18px; */
     border-radius: 15px;
     border: 1px solid rgb(223, 235, 114);
     box-shadow: rgba(133, 75, 9, 0.25) 0px 0.0625em 0.0625em, rgba(255, 255, 255, 0.25) 0px 0.125em 0.5em, rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+    zoom: 1.04;
+    bottom: 6px;
 }
 
 .swiper-button-prev:after{
@@ -48,14 +50,52 @@
   border-radius: 15px;
 }
 
-/* @media screen and (max-width: 640px) {
-  .swiper-container {
-    width: 80px;
-    height: 100px;
-    padding-right: 15px;
-  }
+@media screen and (max-width: 414px) {
   .swiper-slide {
-    width: 80px;
-    height: 120px;
+    height: 150px !important;
   }
-} */
+  .swiper-button-prev{
+    top: 235px;
+}
+.swiper-button-next{
+    top: 235px;
+}
+}
+@media screen and (max-width: 524px) and (min-width:414px) {
+  .swiper-slide {
+    height: 180px !important;
+  }
+  .swiper-button-prev{
+    top: 260px;
+}
+.swiper-button-next{
+    top: 260px;
+}
+}
+@media screen and (max-width: 620px) and (min-width:524px) {
+  .swiper-slide {
+    height: 220px !important;
+  }
+  .swiper-button-prev{
+    top: 300px;
+}
+.swiper-button-next{
+    top: 300px;
+}
+}
+@media screen and (max-width: 768px) and (min-width:620px) {
+  .swiper-slide {
+    height: 280px !important;
+  }
+  .swiper-button-prev{
+    top: 370px;
+}
+.swiper-button-next{
+    top: 370px;
+}
+}
+@media screen and (min-width:1024px) {
+  .swiper-slide-active{
+    margin-left: 10px;
+  }
+}

@@ -1,14 +1,16 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import './Header.css'
 import barndlogo from '../assets/brand Logo.png'
+import barndlogoBlack from '../assets/brand Logo Black.png'
 
 const Header = () => {
+  const location = useLocation();
   return (
-      <header className="p-4 bg-transparent text-white absolute w-full z-50">
-        <div className="container flex justify-between h-16 mx-auto">
+      <header className="p-4 bg-transparent absolute w-full z-50">
+        <div className=" flex justify-between h-16 mx-auto">
           <Link to="/home">
-          <img src={barndlogo} alt="" className="w-[120px] h-[50px]"/>
+          <img src={`${location.pathname === '/'? barndlogo:location.pathname === '/home'? barndlogo:location.pathname === '/booking'? barndlogo:barndlogoBlack}`} alt="" className="w-[120px] h-[50px]"/>
           </Link>
           <ul className="items-stretch hidden space-x-3 lg:flex">
             <li className="flex items-center">
@@ -60,7 +62,7 @@ const Header = () => {
                 to="/gallery"
                 className="flex items-center px-4 -mb-1 border-b-2 border-transparent nav-link nav-link-ltr"
               >
-                Contact
+                Gallery
               </NavLink>
             </li>
           </ul>

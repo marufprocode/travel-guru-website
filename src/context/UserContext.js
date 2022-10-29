@@ -5,6 +5,7 @@ export const sharedContext = createContext();
 const UserContext = ({children}) => {
     const [activeCard, setActiveCard] = useState();
     const [loading, setLoading] = useState(true);
+    
 
     const localData = JSON.parse(localStorage.getItem('data'));
     if(!activeCard) return setActiveCard(localData) 

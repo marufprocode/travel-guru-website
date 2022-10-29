@@ -1,6 +1,7 @@
 import React from "react";
 import './Booking.css'
 import bgImage from '../assets/images/Sreemongol.png'
+import { Link } from "react-router-dom";
 
 const BookingForm = () => {
   return (
@@ -41,7 +42,7 @@ const BookingForm = () => {
             </div>
           </div>
           <div className="form-btn">
-            <button className="submit-btn text-white">Book Now</button>
+            <Link to='/hoteldetail'><button to='/hoteldetail' className="submit-btn text-white">Book Now</button></Link>
           </div>
         </form>
       </div>

@@ -23,14 +23,14 @@ const VideoBG = () => {
                 activeCard?.category === "Sundarban" &&
                 <video data-aos="fade-left" src={sundarban} autoPlay loop muted 
                 className='object-cover relative'
-                style={{width: '100%', height:'100vh', objectFit: 'cover', zIndex: '-1'}}
+                style={{width: '100%', height:'100%', objectFit: 'cover', zIndex: '-1'}}
                 ></video>
             }
             {
                 activeCard?.category === "Sajek Valley" &&
                 <video data-aos="fade-left" src={sajek} autoPlay loop muted 
                 className='object-cover relative'
-                style={{width: '100%', height:'100vh', objectFit: 'cover', zIndex: '-1'}}
+                style={{width: '100%', height:'100%', objectFit: 'cover', zIndex: '-1'}}
                 ></video>
             }
         </div>

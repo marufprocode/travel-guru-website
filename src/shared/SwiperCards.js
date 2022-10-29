@@ -17,8 +17,9 @@ const SwiperCards = ({data, setActiveCard}) => {
   return (
     <div className='relative'>
       <Swiper
-        slidesPerView={3}
+        // slidesPerView={3}
         spaceBetween={30}
+        // autoHeight={true}
         navigation={{
           // Both prevEl & nextEl are null at render so this does not work
           prevEl: navigationPrevRef.current,
@@ -53,30 +54,30 @@ const SwiperCards = ({data, setActiveCard}) => {
           modifier: 1,
           slideShadows: true,
         }}
+        
         modules={[Pagination, Navigation]}
         className="mySwiper h-[450px]"
         onSlideChange={(slide) => {
-          slide.width="700px"
+          // slide.width="700px"
           setActiveCard(data[slide?.realIndex])
           const localData = data[slide?.realIndex];
           localStorage.setItem('data', JSON.stringify(localData))
         }}
-        breakpoints={{
-          // when window width is >= 640px
+        // calculateHeight={true}
+        breakpoints={ {
+          // when window width is >= 320px
           0: {
             slidesPerView: 3,
-            spaceBetween: 20,
-            // width: '50px'
+            spaceBetween: 20, 
           },
-          // when window width is >= 768px
           768: {
             slidesPerView: 2,
-            spaceBetween: 20
+            spaceBetween: 40
           },
-          1200: {
+          1024: {
             slidesPerView: 3,
-            spaceBetween: 30
-          },
+            spaceBetween: 40
+          }
         }}
       
       >
